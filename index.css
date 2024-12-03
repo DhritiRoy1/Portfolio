@@ -1,0 +1,51 @@
+.header {
+    background-color: #a0a832;
+    display: flex;
+    flex-direction: row;  
+    padding:10px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column; /* Stack child elements vertically */        /* Ensure text alignment is left */
+    margin-bottom:10px;
+    justify-content: flex-end;
+    text-align: bottom;
+    transform: translate(-250px,10px);
+}
+.image{
+    transform: translate(-250px,10px);
+}
+.personas{
+    
+    display: flex;
+    flex-wrap: wrap; /* Allow images to wrap if they don’t fit */
+    justify-content: center; /* Center images horizontally */
+    height: auto; 
+}
+.outer-persona-class{
+    transform: translate(0px,0px);
+    background-color: #a0a832;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.domain{
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.outer-sketch-class{
+    background-color: antiquewhite;
+    transform: translateY(-30px);
+}
+
+.sketches {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+    grid-template-rows: repeat(2, auto); /* 3 rows with auto height */
+     /* Adds spacing between grid items */
+    width: fit-content; /* Adjusts the width of the grid to fit its content */
+    margin:0 auto;/* Ensures horizontal centering */
+}
